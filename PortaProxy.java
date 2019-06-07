@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
-public class PortaProxy extends CômodosCasa {
+public class PortaProxy extends CÃ´modosCasa {
 
 	private String email = "admin";
 	private String senha = "admin";
 	private FactoryCasa factory = new FactoryCasa();
-	CômodosCasa comodo;
+	CÃ´modosCasa comodo;
 	private static int andando = 0;
 
 	ArrayList<Policia> policias = new ArrayList<Policia>();
@@ -17,7 +17,7 @@ public class PortaProxy extends CômodosCasa {
 			this.andando++;
 
 		} else {
-			System.out.println("negado");
+			System.err.println("negado");
 			addPolicia(new PoliciaRota());
 
 			this.notificarPoliciasAlerta();
@@ -36,7 +36,7 @@ public class PortaProxy extends CômodosCasa {
 			p.add(true);
 			p.policia();
 		}
-		System.out.print("SE FURGIR É PIOR");
+		System.out.print("SE FURGIR Ã‰ PIOR");
 	}
 
 	@Override
